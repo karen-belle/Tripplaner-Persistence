@@ -19,39 +19,43 @@ $.get('/api/activities', function(activities) {
     })
     .fail(console.error.bind(console));
 
-$.get('/api/days', function(days) {
+// $.get('/api/days', function(days) {
 
-        days.forEach(function(day) {
-          //   $('#itinerary').append(` <section class="day">
-          //   <div>
-          //     <h4>My Hotel</h4>
-          //     <ul class="list-group trip-day-hotels">
-          //     <li class=itinerary-item>
-          //            ${day.hotelId}
-          //            <button data-action="deleteFromTrip" class="btn btn-xs btn-danger remove btn-circle">x</button>
-          //         </li>
-          //     </ul>
-          //   </div>
-          //   <div>
-          //     <h4>My Restaurants</h4>
-          //     <ul class="list-group trip-day-restaurants">
-          //     <li class=itinerary-item>
-          //            ${day.restaurantId}
-          //            <button data-action="deleteFromTrip" class="btn btn-xs btn-danger remove btn-circle">x</button>
-          //         </li>
-          //     </ul>
-          //   </div>
-          //   <div>
-          //     <h4>My Activities</h4>
-          //     <ul class="list-group trip-day-activities">
-          //     <li class=itinerary-item>
-          //            ${day.activityId}
-          //            <button data-action="deleteFromTrip" class="btn btn-xs btn-danger remove btn-circle">x</button>
-          //         </li>
-          //     </ul>
-          //   </div>            
-          // </section>`)
+//         days.forEach(function(day) {
+//           //   $('#itinerary').append(` <section class="day">
+//           //   <div>
+//           //     <h4>My Hotel</h4>
+//           //     <ul class="list-group trip-day-hotels">
+//           //     <li class=itinerary-item>
+//           //            ${day.hotelId}
+//           //            <button data-action="deleteFromTrip" class="btn btn-xs btn-danger remove btn-circle">x</button>
+//           //         </li>
+//           //     </ul>
+//           //   </div>
+//           //   <div>
+//           //     <h4>My Restaurants</h4>
+//           //     <ul class="list-group trip-day-restaurants">
+//           //     <li class=itinerary-item>
+//           //            ${day.restaurantId}
+//           //            <button data-action="deleteFromTrip" class="btn btn-xs btn-danger remove btn-circle">x</button>
+//           //         </li>
+//           //     </ul>
+//           //   </div>
+//           //   <div>
+//           //     <h4>My Activities</h4>
+//           //     <ul class="list-group trip-day-activities">
+//           //     <li class=itinerary-item>
+//           //            ${day.activityId}
+//           //            <button data-action="deleteFromTrip" class="btn btn-xs btn-danger remove btn-circle">x</button>
+//           //         </li>
+//           //     </ul>
+//           //   </div>            
+//           // </section>`)
 
-        });
-    })
-    .fail(console.error.bind(console));
+//         });
+//     })
+//     .fail(console.error.bind(console));
+$.get('/api/days', function (data) {console.log('GET response data', data)})
+  .fail( console.error.bind(console) );
+
+

@@ -28,7 +28,7 @@ router.post('/', function(req, res, next) {
 });
 
 router.put('/hotel', function(req, res, next) {
-	console.log("In the put");
+    console.log("Day ID ", req.body.dayId);
     Day.findById(+req.body.dayId)
         .then(function(day) {
             day.update({ hotelId: +req.body.hotelId })
@@ -40,14 +40,14 @@ router.put('/hotel', function(req, res, next) {
 
 });
 
-router.post('/:id/hotels', function(req, res, next) {
-    console.log('hey');
-})
-router.post('/:id/restaurants', function(req, res, next) {
-    console.log('hey1');
-})
-router.post('/:id/activities', function(req, res, next) {
-    console.log('hey2');
-})
+// router.post('/:id/hotels', function(req, res, next) {
+//     console.log('hey');
+// })
+// router.post('/:id/restaurants', function(req, res, next) {
+//     console.log('hey1');
+// })
+// router.post('/:id/activities', function(req, res, next) {
+//     console.log('hey2');
+// })
 
 module.exports = router;
